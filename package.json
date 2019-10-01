@@ -1,6 +1,6 @@
 {
   "name": "react-native-svg-viewer",
-  "title": "React Native Svg Parser",
+  "title": "React Native Svg Viewer",
   "version": "1.0.0",
   "description": "Viewer for react-native SVG implementing native iOS and Android views",
   "main": "index.js",
