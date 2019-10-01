@@ -8,7 +8,9 @@ This library relies on:
 - Android: [AndroidSVG](https://bigbadaboom.github.io/androidsvg/)
 - iOS: [SVGKit](https://github.com/SVGKit/SVGKit)
 
-N.B. currently it accepts as source only a string with a valid namespace
+Limitations:
+ - The library accepts as source only an SVG string (PR are welcome)
+ - The SVG need to have a valid namespace
 
 ## Getting started
 
@@ -59,4 +61,17 @@ export default () => (
         style = {{ width:200, height:210}}
     />
 )
+
 ```
+### Props
+
+| Prop              | Type       | Default | Note                                   |
+| ----------------- | ---------- | ------- | ---------------------------------------|
+| `style`           | `style`    |   { }   | You need to specify a width and height |
+
+### Methods
+
+| Prop              |  Note                                                                                        |
+| ----------------- | ---------------------------------------------------------------------------------------------|
+| `getSize`         | exported method which returns a `{width, height}` object that can be used to style the image |
+
