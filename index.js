@@ -14,7 +14,7 @@ type Props = {
     heigth: number | string
   },
   source: string,
-}
+};
 
 const SVG = ({ source, style, ...rest }: Props) => {
   if (!style || !style.width || !style.height) {
